@@ -1,25 +1,51 @@
-# Matrix Operations-Diagonal Matrix Elements Printer 🧮
+### EX: 9.1                 MATRIX OPERATIONS
+### Aim: To Write a Python Program to subtract two matrices by reading the matrix from the user.
+### Algorithm:
 
-This Python program reads a matrix of any size from the user and prints **only the diagonal elements**, leaving other elements blank in the output.
+STEP 1: Start.
 
-## 📌 Aim
+STEP 2: Create a variable r and c for rows and columns of the matrix.
 
-To write a Python program that prints only the diagonal elements of a given matrix.
+STEP 3: Get the value of r and c from user.
 
-## 🧠 Algorithm
+STEP 4: Define a function to create a matrix.
 
-1. Read the number of rows and columns from the user.
-2. Initialize an empty matrix of size `rows × columns`.
-3. Populate the matrix with user input.
-4. Display the full matrix.
-5. Iterate through the matrix and:
-   - If `i == j`, print the element (main diagonal).
-   - Else, print a blank space.
-6. Print a newline after each row.
+STEP 5 : Define another function to subtract the matrices.
 
-## 🖥️ Program
-Add Code Here
+STEP 6: Print the result.
 
+STEP 7 : Stop.
+### Program:
+```
+reg no:212223070004
+name:dhushanth.km
+def create_matrix(n,m):
+         M = []
+         for i in range(n):
+                   row = []
+                   for j in range(m):
+                      x = int(input())
+                       row.append(x)
+           M.append(row)
+         return M
+r,c = input().split()
+A = create_matrix(int(r),int(c))
+B = create_matrix(int(r),int(c))
+C = []
+for i in range(int(r)):
+         R = []
+ 
+
+        for j in range(int(c)):
+                item = A[i][j]-B[i][j]
+   R.append(item)
+C.append(R)
+print(A)
+print(B)
+print(C)
+```
 ### Output:
+![image](https://github.com/user-attachments/assets/715e58a2-ac73-4948-b611-c7ed1a20d74e)
 
-## Result
+
+### Result: Thus, the given program is implemented and executed successfully .
